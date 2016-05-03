@@ -7,7 +7,6 @@ package br.edu.ifpb.jfstore.factoy;
 
 import br.edu.ifpb.jfstore.DAO.*;
 
-
 /**
  *
  * @author José
@@ -15,7 +14,11 @@ import br.edu.ifpb.jfstore.DAO.*;
 public interface FactoryDAOIF {
 
     UsuarioDAOIF criaUsuarioDAO();
+
     produtoDAOif criarProdutoDAO();
+
     VendaDAOIF criarvendaDAO();
+
+    CategoriaDAOi criarCategoriaDAO();
 
 }

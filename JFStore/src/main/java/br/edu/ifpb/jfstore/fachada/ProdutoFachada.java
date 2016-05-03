@@ -63,7 +63,7 @@ public boolean remover(int idProduto){
      * @param id
      * @return
      */
-    Produto buscaporId(int id) {
+  public Produto buscaporId(int id) {
         buscar = new PodutoBuscarBO();
         return buscar.buscaporId(id);
     }

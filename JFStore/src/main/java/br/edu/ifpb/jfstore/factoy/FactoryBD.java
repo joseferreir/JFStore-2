@@ -23,4 +23,9 @@ public class FactoryBD implements FactoryDAOIF {
        return new VendaDAO();
     }
 
+    @Override
+    public CategoriaDAOi criarCategoriaDAO() {
+       return new CategoriaDAO();
+    }
+
 }

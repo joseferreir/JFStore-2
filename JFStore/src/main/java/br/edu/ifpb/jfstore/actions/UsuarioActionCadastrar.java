@@ -47,7 +47,7 @@ public class UsuarioActionCadastrar implements Action {
             System.err.println(ex.getMessage());
             
         }
-        resultadoCadastro.remove("passou");
+        resultadoCadastro.put("passou", "Cadastrado com sucesso");
        String json = new Gson().toJson(resultadoCadastro.values());
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");

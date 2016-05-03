@@ -11,7 +11,12 @@ CREATE TABLE Usuario(
     PRIMARY KEY(id)
 
 );
-
+-- tabela Cateroria dos produtos
+CREATE TABLE Categoria (
+       id SERIAL,
+       categoria VARCHAR(50),
+       PRIMARY KEY(categoria)
+);
 
 -- table Produto
 CREATE TABLE Produto(
@@ -21,6 +26,7 @@ CREATE TABLE Produto(
     Categoria VARCHAR(50) NOT NULL,
     preco DOUBLE PRECISION NOT NULL,
     imagem VARCHAR(100) NOT NULL,
+ FOREIGN KEY (categoria) REFERENCES Categoria(categoria) ON DELETE SET NULL,
     PRIMARY KEY(id)
 );
 
@@ -44,3 +50,4 @@ CREATE TABLE VendaProduto (
     PRIMARY KEY(codigoVenda,idProduto)
 );
 
+INSERT INTO Usuario ("nome","email","senha","eh_admin") VALUES ('Admin','admin@gmail.com','a21dmin','true')
