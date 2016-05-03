@@ -26,7 +26,7 @@ public class ProdutoVer implements Action{
         ProdutoFachada ProdutoFachada = new ProdutoFachada();
         Produto produto = ProdutoFachada.buscaporId(id);
         request.getSession().setAttribute("produto", produto);
-          response.sendRedirect("/VerProduto");
+          response.sendRedirect("/VerProduto.jsp");
         
     }
     
